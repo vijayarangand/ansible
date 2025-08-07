@@ -1,0 +1,58 @@
+----Git---
+
+Git --> It's used to track of code change and collaborate tool.
+
+1.How to create GitHub account?
+	github.com
+
+2.How to configure Git in our local machine?
+	Download git and install it on local machine
+
+3.How to access git from our local machine?
+	Genrate ssh from local machine
+
+		    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+		-t rsa: Specifies the RSA algorithm for key generation.
+		-b 4096: Sets the key length to 4096 bits for stronger security (recommended).
+		-C "your_email@example.com": Adds a comment to the public key for identification.
+
+	After creating the key, copy the key from below path in our local machine.
+			userhomedir/.ssh/id_rsa.pub
+	
+      Add the key to Github server.
+			go > your copilot > SSH & GPG Keys > create new key > Give title name and paste the key you copied from our local machine.
+
+4.How to config repo in our local machine?
+	Two ways--> https & ssh
+
+		HTTPS
+			git config --global user.name "Your Name"
+			git config --global user.email "your.email@example.com"
+		    git config --global credential.helper store
+		SSH
+			Step 3 for ssh configure.
+
+5.How to copy the brach in our local machine?
+		git clone "repo url"
+
+6.How to add file?
+	create or modified files > add > commit > push or pull
+	u-untracked file (new)
+	m-modified file
+
+7.How to convert our local folder to git?
+	git init
+		create new repo
+	git remote add origin "repo url"
+
+8.How to branch cmds?
+	git branch --->Current branch
+	git branch -a --->List all braches
+	git branch -m viji --->rename the branch name from main to viji
+	git branch viji ---->new branch creation
+	git checkout main --->Switch the branch
+
+		
+	
+		
