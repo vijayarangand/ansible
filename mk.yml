@@ -4,9 +4,5 @@
   tasks:
   
     - name: Make Dir
-      file:
-        path: /vijayarangan
-        statte: directory
-        mode: '0755'
-        owner:  root
-        group: root
+      ansible.builtin.debug:
+        msg: "Hello world from AWX!"
