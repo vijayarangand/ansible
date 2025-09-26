@@ -1,8 +1,9 @@
----
-- hosts: all
-  become_user: awx
+- name: Create folder in root
+  hosts: all
+  become: true
   tasks:
-    - name: Mkd Dir
+    - name: Create directory
       file:
-        path: '/vijayarangand'
+        path: "/vijayarangand"
         state: directory
+        mode: '0755'
