@@ -1,8 +1,8 @@
 ---
 - hosts: all
+  become: true
   tasks:
-
-
+  
     - name: Make Dir
       file:
         path: /vijayarangan
