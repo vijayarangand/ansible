@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+    - name: Apt update
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Install Httpd
+      apt:
+        name: apache2
+        state: present
+
+    - name: Service Restart
+      service:
+        name: apache2
+        state: restarted
+        enabled: yes 
