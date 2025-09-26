@@ -4,6 +4,6 @@
   tasks:
     - name: Create directory
       file:
-        path: "/home/awx/testing"
+        path: "/vijaykikii"
         state: directory
         mode: '0755'
