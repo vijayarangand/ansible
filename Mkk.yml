@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Mkd Dir
+      file:
+        path: /vijayarangand
+        state: directory
