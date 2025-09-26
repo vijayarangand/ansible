@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  become: true
+  become_user: awx
   tasks:
     - name: Mkd Dir
       file:
