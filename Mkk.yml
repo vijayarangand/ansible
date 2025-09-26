@@ -4,5 +4,5 @@
   tasks:
     - name: Mkd Dir
       file:
-        path: /vijayarangand
+        path: '/vijayarangand'
         state: directory
